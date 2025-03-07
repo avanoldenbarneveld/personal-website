@@ -17,7 +17,7 @@ export default function Home() {
         </ul>
         <h2 className="text-2xl font-semibold mt-6 mb-2">What to Expect</h2>
         <p className="text-lg">
-          I'll be writing about:
+          I&apos;ll be writing about:
           <ul className="list-disc list-inside mt-2">
             <li>How I would approach learning coding if I were starting over.</li>
             <li>How to think in problem-solving terms.</li>
