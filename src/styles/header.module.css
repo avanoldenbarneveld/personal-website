@@ -1,0 +1,12 @@
+.header {
+    @apply bg-gray-800 text-white p-4;
+  }
+  
+  .nav {
+    @apply flex gap-4 justify-center;
+  }
+  
+  .nav a {
+    @apply hover:text-blue-400 transition-colors;
+  }
+  
