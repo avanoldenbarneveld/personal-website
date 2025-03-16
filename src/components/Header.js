@@ -1,16 +1,21 @@
-'use client';
-
 import Link from 'next/link';
-import styles from '@/styles/header.module.css';
 
 export default function Header() {
   return (
-    <header className={styles.header}>
-      <nav className={styles.nav}>
-        <Link href="/">Home</Link>
-        <Link href="/about">About</Link>
-        <Link href="/blog">Blog</Link>
-        <Link href="/contact">Contact</Link>
+    <header className="bg-gray-800 text-white p-4">
+      <nav className="flex gap-4 justify-center">
+        <Link href="/" passHref>
+          <a className="hover:text-blue-400 transition-colors">Home</a>
+        </Link>
+        <Link href="/about" passHref>
+          <a className="hover:text-blue-400 transition-colors">About</a>
+        </Link>
+        <Link href="/blog" passHref>
+          <a className="hover:text-blue-400 transition-colors">Blog</a>
+        </Link>
+        <Link href="/contact" passHref>
+          <a className="hover:text-blue-400 transition-colors">Contact</a>
+        </Link>
       </nav>
     </header>
   );
