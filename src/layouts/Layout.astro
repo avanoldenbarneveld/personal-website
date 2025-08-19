@@ -1,0 +1,30 @@
+---
+const { title = "Alberto Van" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body>
+    <header>
+      <h2><a href="/">Alberto van Oldenbarneveld</a></h2>
+      <nav>
+        <a href="/">Home</a> ·
+        <a href="/about">About</a> ·
+        <a href="/blog">Blog</a> ·
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <p>© {new Date().getFullYear()} Alberto van Oldenbarneveld. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
