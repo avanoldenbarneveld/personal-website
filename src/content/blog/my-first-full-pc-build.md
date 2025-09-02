@@ -1,7 +1,7 @@
 ---
 title: "My First Full PC Build"
 pubDate: "2025-09-01"
-description: "My journey into the world of PC building."
+description: "A detailed look at how I approached my first full PC build: setting goals, balancing trade-offs, and making the most of a tight budget to create a machine that feels truly mine."
 draft: false
 ---
 
