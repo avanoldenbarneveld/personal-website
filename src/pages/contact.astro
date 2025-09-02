@@ -1,7 +1,82 @@
 ---
 import Layout from "../layouts/Layout.astro";
 ---
+
 <Layout title="Contact">
   <h1>Contact</h1>
-  <p>Email me: <a href="mailto:you@example.com">you@example.com</a></p>
+  <p>If you’d like to connect, share an idea, or just say hi, I’d love to hear from you! This form will send your message straight to my inbox.</p>
+
+  <form
+    action="https://formspree.io/f/xvgbblon"
+    method="POST"
+    style="
+      background: #111;
+      padding: 2rem 1.5rem;
+      border-radius: 10px;
+      max-width: 400px;
+      margin: 2rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    "
+  >
+    <label style="display: flex; flex-direction: column; font-weight: 500;">
+      Your email:
+      <input
+        type="email"
+        name="email"
+        required
+        style="
+          margin-top: 0.5rem;
+          padding: 0.5rem;
+          border-radius: 5px;
+          border: 1px solid #333;
+          background: #181818;
+          color: #fff;
+        "
+      />
+    </label>
+    <label style="display: flex; flex-direction: column; font-weight: 500;">
+      Your message:
+      <textarea
+        name="message"
+        rows="5"
+        required
+        style="
+          margin-top: 0.5rem;
+          padding: 0.5rem;
+          border-radius: 5px;
+          border: 1px solid #333;
+          background: #181818;
+          color: #fff;
+          resize: vertical;
+        "
+      ></textarea>
+    </label>
+    {/* Honeypot field for spam protection */}
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+    <button
+      type="submit"
+      style="
+        padding: 0.7rem 0;
+        border-radius: 5px;
+        border: none;
+        background: #4da6ff;
+        color: #fff;
+        font-weight: bold;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.2s;
+      "
+      onmouseover="this.style.background='#99cfff'"
+      onmouseout="this.style.background='#4da6ff'"
+    >
+      Send
+    </button>
+  </form>
+
+  <p style="margin-top:1rem;font-size:0.95em;color:#888;">
+    You can also find me on <a href="https://www.linkedin.com/in/albertovan" style="color:#4da6ff;">LinkedIn</a> if that’s easier.
+  </p>
 </Layout>
