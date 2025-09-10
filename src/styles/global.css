@@ -65,3 +65,19 @@ ul {
   display: block;
   margin: 2rem auto;
 }
+
+.blog-intro {
+  background: #111;
+  border-left: 4px solid #3b82f6;
+  border-right: 4px solid #3b82f6;
+  padding: 1rem 1.25rem;
+  margin: 0.5rem 0 2rem;
+  border-radius: 8px;
+}
+
+.blog-intro p {
+  color: #d1d5db;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  margin: 0;
+}

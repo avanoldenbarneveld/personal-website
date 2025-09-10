@@ -2,19 +2,23 @@
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from 'astro:content';
 
-// Get all blog posts that are not drafts
-const posts = await getCollection('blog', ({ data }) => {
-  return !data.draft;
-});
-
-// Sort posts by publication date (newest first)
+const posts = await getCollection('blog', ({ data }) => !data.draft);
 posts.sort((a, b) => new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime());
 ---
 
 <Layout title="Blog">
   <main class="max-w-4xl mx-auto px-4 py-8">
-    <h1 class="text-4xl font-bold mb-8">Blog</h1>
-    
+    <h1 class="text-4xl font-bold mb-6">Blog</h1>
+
+    <div class="blog-intro">
+      <p>
+        This blog is where I share the way I think through the things I care about.
+        I like to dive deep, follow the details, and build a clear structure around them.
+        Writing here lets me make that process visible — the choices, the patterns, and
+        the passion that drive me when I get into something fully.
+      </p>
+    </div>
+
     {posts.length === 0 ? (
       <p class="text-lg text-gray-600">No posts yet. Check back soon!</p>
     ) : (
