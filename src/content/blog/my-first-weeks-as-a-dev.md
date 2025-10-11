@@ -5,10 +5,6 @@ description: "Reflections from my first dev job: learning team dynamics, tools, 
 draft: false
 ---
 
-
-
-# My First Weeks as a Full Stack Developer
-
 I recently started working as a Full Stack Developer, and there are a few things I would like to talk about that just might not be as one would expect when starting to work as a dev, in the hopes of that it may help someone down the road, but also to put order to a few ideas that have been running around in my head.
 
 ![FirstWeeksFullStack](/blog-images/FirstWeeksFullStack.jpg)
