@@ -53,7 +53,7 @@ Take a simple example: parsing a number that arrives from the backend as a strin
 
 ## Ask before changing anything
 
-Small implementations that do not break other things in the code and that adapt to the way things are being done already inside your repos is the way to go here. If you see things that might be improved or that are inconsistent do not, I repeat, do not take the initiative and fix them without being asked. The chances that you will do this perfectly and will thus be appreciated are tiny, and the risk that you’ll break something, step on someone’s toes, or violate an unspoken team convention is huge.
+Small implementations that do not break other things in the code and that adapt to the way things are being done already inside your repos is the way to go here. If you see things that might be improved or that are inconsistent do not, I repeat, **do not** take the initiative and fix them without being asked. The chances that you will do this perfectly and will thus be appreciated are tiny, and the risk that you’ll break something, step on someone’s toes, or violate an unspoken team convention is huge.
 
 If you see something ask the most appropriate person in a casual way first. "Hey, I've seen that this specific part of the code works in this manner, is that something that is intended, is it a quirk or an unintended side effect of something else, or was this implemented this way for a specific reason?", before even thinking of trying to lobby for a change.
 
