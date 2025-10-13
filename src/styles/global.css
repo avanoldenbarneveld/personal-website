@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
   color: #fff;
-  background: #000;
+  background: #191b1c;
 }
 
 /* Images */
@@ -160,7 +160,7 @@ ul {
 
 /* Blog intro box */
 .blog-intro {
-  background: #111;
+  background: #191b1c;
   border-left: 4px solid #3b82f6;
   border-right: 4px solid #3b82f6;
   padding: 1rem 1.25rem;
