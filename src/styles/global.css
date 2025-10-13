@@ -96,7 +96,60 @@ ul {
   margin: 1rem 0 1rem 1.5rem;
 }
 
-/* Blog specific */
+/* BLOG: list page */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.post-item {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #333;
+}
+
+.post-title a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.post-description {
+  color: #b3b3b3;
+  margin-top: 0.5rem;
+}
+
+.post-date {
+  color: #808080;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/* BLOG: single post */
+.markdown-content {
+  margin-top: 2rem;
+  line-height: 1.8;
+}
+
+.markdown-content h2 {
+  margin-top: 2rem;
+  font-size: 1.75rem;
+}
+
+.markdown-content h3 {
+  margin-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.markdown-content p {
+  margin: 1rem 0;
+}
+
+.markdown-content ul {
+  margin-left: 1.5rem;
+}
+
 .markdown-content img {
   max-width: 100%;
   height: auto;
@@ -105,6 +158,7 @@ ul {
   border-radius: 10px;
 }
 
+/* Blog intro box */
 .blog-intro {
   background: #111;
   border-left: 4px solid #3b82f6;
@@ -120,6 +174,20 @@ ul {
   line-height: 1.75;
   margin: 0;
 }
+
+/* Blog links */
+.post-item a,
+.markdown-content a {
+  color: #4da6ff;
+  text-decoration: none;
+}
+
+.post-item a:hover,
+.markdown-content a:hover {
+  color: #99cfff;
+  text-decoration: underline;
+}
+
 
 /* Responsive */
 @media (max-width: 600px) {
@@ -145,9 +213,5 @@ ul {
 
   h2 {
     font-size: 1.4rem;
-  }
-
-  nav {
-    font-size: 1rem;
   }
 }
