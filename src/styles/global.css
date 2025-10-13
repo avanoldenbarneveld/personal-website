@@ -189,6 +189,40 @@ ul {
 }
 
 
+/* Single blog post header layout */
+.post-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #333;
+}
+
+.post-header h1 {
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.post-header .post-description {
+  font-size: 1.2rem;
+  color: #cfcfcf;
+}
+
+.post-header .post-date {
+  font-size: 0.95rem;
+  color: #cfcfcf
+}
+
+/* Constrain post content width (matches <main>) */
+article.markdown-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+
+
 /* Responsive */
 @media (max-width: 600px) {
   header {

@@ -19,38 +19,27 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title}>
-  <main class="max-w-4xl mx-auto px-4 py-8">
-    <article class="markdown-content prose prose-lg max-w-none">
-      <header class="mb-8">
-        <h1 class="text-4xl font-bold mb-4">{post.data.title}</h1>
-        <p class="text-xl text-gray-600 mb-4">{post.data.description}</p>
-        <div class="flex items-center text-sm text-gray-500">
-          <time datetime={post.data.pubDate.toISOString()}>
-            Published on {post.data.pubDate.toLocaleDateString('en-US', {
-              year: 'numeric',
-              month: 'long',
-              day: 'numeric'
-            })}
-          </time>
-          {post.data.updatedDate && (
-            <span class="ml-4">
-              Updated on {post.data.updatedDate.toLocaleDateString('en-US', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}
-            </span>
-          )}
-        </div>
+  <main>
+    <article class="markdown-content">
+      <header class="post-header">
+        <h1>{post.data.title}</h1>
+        {post.data.description && (
+          <p class="post-description">{post.data.description}</p>
+        )}
+        <p class="post-date">
+          Published on{" "}
+          {post.data.pubDate.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+          })}
+        </p>
       </header>
-      
-      <div class="mt-8">
-        <Content />
-      </div>
+
+      <Content />
     </article>
 
-    <!-- Comments section -->
-    <section id="comments" class="mt-12">
+    <section id="comments" style="margin-top: 3rem;">
       <script src="https://giscus.app/client.js"
         data-repo="avanoldenbarneveld/personal-website"
         data-repo-id="R_kgDOPf7ksQ"
