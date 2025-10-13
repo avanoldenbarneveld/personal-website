@@ -113,3 +113,14 @@ ul {
   margin: 2rem auto;
   border-radius: 10px;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+  
+nav a {
+  margin-left: 1rem;
+}
