@@ -19,7 +19,6 @@ const { Content } = await post.render();
 ---
 
 <Layout title={post.data.title}>
-  <main>
     <article class="markdown-content">
       <header class="post-header">
         <h1>{post.data.title}</h1>
@@ -58,5 +57,4 @@ const { Content } = await post.render();
       </script>
       <noscript>Please enable JavaScript to view the comments.</noscript>
     </section>
-  </main>
 </Layout>
