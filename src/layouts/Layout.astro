@@ -7,19 +7,36 @@ const { title = "Alberto van Oldenbarneveld" } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Basic SEO -->
     <title>{title}</title>
-    <link rel="stylesheet" href="/src/styles/global.css" />
+    <meta name="description" content="Software, clarity and systems thinking – practical essays and projects from developer Alberto van Oldenbarneveld.">
+    <link rel="canonical" href="https://albertovan.com">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <meta name="description" content="Software, clarity and systems thinking – practical essays and projects from developer Alberto van Oldenbarneveld.">
+
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:title" content="Alberto van Oldenbarneveld – Software Developer & Systems Thinker">
+    <meta property="og:description" content="Software, clarity and systems thinking – practical essays and projects from developer Alberto van Oldenbarneveld.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://albertovan.com">
+    <meta property="og:image" content="/og-image.jpg">
+
+    <!-- Twitter Preview -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Alberto van Oldenbarneveld – Software Developer & Systems Thinker">
+    <meta name="twitter:description" content="Software, clarity and systems thinking – practical essays and projects from developer Alberto van Oldenbarneveld.">
+    <meta name="twitter:image" content="/og-image.jpg">
   </head>
   <body>
     <header>
-  <h2>
-    <a href="/" style="color: inherit; text-decoration: none;">
-      Alberto van Oldenbarneveld
-    </a>
-  </h2>
+      <h2>
+        <a href="/" style="color: inherit; text-decoration: none;">
+          Alberto van Oldenbarneveld
+        </a>
+      </h2>
       <nav>
         <a href="/about">About me</a>
         <a href="/blog">Blog</a>
