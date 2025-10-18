@@ -48,30 +48,33 @@ const nextPost = posts[index - 1];
     <Content />
   </article>
 
-  {(prevPost || nextPost) && (
-    <nav style="
-      display: flex;
-      justify-content: space-between;
-      margin-top: 3rem;
-      padding: 1.5rem;
-      background: #1f2123;
-      border-radius: 8px;
-    ">
-      {prevPost ? (
-        <a href={`/blog/${prevPost.slug}`} style="text-decoration: none; color: #bbb;">
-          « PREV<br />
-          <strong>{prevPost.data.title}</strong>
-        </a>
-      ) : <span></span>}
+{(prevPost || nextPost) && (
+  <nav class="post-nav" style="
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 1.5rem 2rem;
+    background: #1f2123;
+    border-radius: 12px;
+  ">
+    {prevPost ? (
+      <a href={`/blog/${prevPost.slug}`}>
+        « PREV<br />
+        <strong>{prevPost.data.title}</strong>
+      </a>
+    ) : <span></span>}
 
-      {nextPost && (
-        <a href={`/blog/${nextPost.slug}`} style="text-decoration: none; color: #bbb; text-align: right;">
-          NEXT »<br />
-          <strong>{nextPost.data.title}</strong>
-        </a>
-      )}
-    </nav>
-  )}
+    {nextPost && (
+      <a href={`/blog/${nextPost.slug}`} style="text-align: right;">
+        NEXT »<br />
+        <strong>{nextPost.data.title}</strong>
+      </a>
+    )}
+  </nav>
+)}
+
 
   <section id="comments" style="margin-top: 3rem;">
     <script src="https://giscus.app/client.js"

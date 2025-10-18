@@ -274,6 +274,7 @@ main > h1 {
   margin-top: 0.5rem;
 }
 
+
 @media (max-width: 768px) {
   .about-section {
     flex-direction: column;
@@ -317,3 +318,36 @@ main > h1 {
     font-size: 1.4rem;
   }
 }
+
+.post-nav a {
+  margin: 0;
+  flex: 1;
+  max-width: 420px; /* keeps balance even if one title is long */
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  transition: color 0.2s ease, transform 0.2s ease;
+  padding: 0 0.75rem;
+}
+
+.post-nav a:first-child {
+  text-align: left;
+}
+
+.post-nav a:last-child {
+  text-align: right;
+}
+
+.post-nav a strong {
+  font-size: 1rem;
+  display: block;
+  margin-top: 0.25rem;
+  color: #e5e5e5;
+}
+
+.post-nav a:hover {
+  color: #4da6ff;
+  text-decoration: underline;
+}
+
+
