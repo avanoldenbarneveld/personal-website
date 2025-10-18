@@ -289,6 +289,18 @@ main > h1 {
 
 /* Responsive */
 @media (max-width: 600px) {
+    .post-nav {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1rem;
+  }
+
+  .post-nav a {
+    max-width: 100%;
+    text-align: center !important;
+  }
+
   header {
     flex-direction: column;
     align-items: flex-start;
